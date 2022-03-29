@@ -1,0 +1,5 @@
+.idea
+.idea/*
+Gemfile.lock
+.gitignore
+.prettierignore

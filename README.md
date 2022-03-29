@@ -2,8 +2,6 @@
 
 ## Description
 
-
-
 ## Run app
 
 ## Example cases
