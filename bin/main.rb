@@ -11,7 +11,7 @@ class Main
 
   def calculate_purchased_items
     @mappings.each do |key, value|
-      current_quantity = @products.count(key)
+      current_quantity = @products.count(key.to_s)
       current_item = value
       current_item[:quantity] = current_quantity
       @purchased_items_list.append(current_item)
@@ -45,19 +45,19 @@ print 'Let the calculation begin'
 end
 p ''
 
-'List of product:'.chars.to_a.map do |ch|
+'List of product: '.chars.to_a.map do |ch|
   sleep 0.1
   print ch
 end
 puts list_of_products.to_s
 
-'Mapping:'.chars.to_a.map do |ch|
+'Mapping: '.chars.to_a.map do |ch|
   sleep 0.1
   print ch
 end
 puts mappings.to_s
 
-'Result => Purchased items: :'.chars.to_a.map do |ch|
+'Result => Purchased items: '.chars.to_a.map do |ch|
   sleep 0.15
   print ch
 end
