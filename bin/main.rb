@@ -49,16 +49,16 @@ p ''
   sleep 0.1
   print ch
 end
-puts "#{list_of_products}"
+puts list_of_products.to_s
 
 'Mapping:'.chars.to_a.map do |ch|
   sleep 0.1
   print ch
 end
-puts "#{mappings}"
+puts mappings.to_s
 
 'Result => Purchased items: :'.chars.to_a.map do |ch|
   sleep 0.15
   print ch
 end
-puts "#{mainInstance.purchased_items_list}"
+puts mainInstance.purchased_items_list.to_s
